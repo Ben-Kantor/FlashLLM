@@ -9,12 +9,19 @@ Export your API key as an environment variable called GEMINI_API_KEY, using .bas
 ## Usage
 
 llm \[PROMPT\] - Send a basic prompt.
+
 llm -c \[PROMPT\] - Clear context, then send a prompt.
+
 llm -p - Print the current context and chat history.
+
 llm -s \[PROMPT\] - Get a short, 1-2 sentence response.
+
 llm -m \[PROMPT\] - Get a medium, 3-5 sentence response.
+
 llm -l \[PROMPT\] - Get a long, 2-3 paragraph response.
+
 llm -t \[PROMPT\] - Enable model thinking.
+
 echo "CONTEXT" | llm \[PROMPT\] - Pipe context to the LLM.
 
 ## How it Works
