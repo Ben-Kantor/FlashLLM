@@ -8,46 +8,14 @@ Export your API key as an environment variable called GEMINI_API_KEY, using .bas
 
 ## Usage
 
-Simply run `llm` followed by your prompt.
-
-### Basic Prompt
-
-llm What is the capital of France?
-
-### Adjusting Response Length
-
-*   **Short (1-2 sentences)**:
-    llm -s Explain quantum entanglement simply.
-
-*   **Medium (3-5 sentences)**:
-    llm -m Describe the benefits of a healthy diet.
-
-*   **Long (2-3 paragraphs)**:
-    llm -l Discuss the impact of climate change on biodiversity.
-
-### Clearing Context
-
-To clear the conversation history for the current shell session:
-llm -c
-
-### Printing Current Context
-
-To view the current conversation context:
-llm -p
-
-### Using Standard Input for Context
-
-You can pipe content from stdin to provide additional context for your prompt:
-cat my_document.txt | llm Summarize this document.
-
-### Extended Thinking
-
-For more complex prompts that might benefit from additional processing time:
-llm -t What are the philosophical implications of AI sentience?
-
-### Getting Help
-
-llm -h
+llm \[PROMPT\] - Send a basic prompt.
+llm -c \[PROMPT\] - Clear context, then send a prompt.
+llm -p - Print the current context and chat history.
+llm -s \[PROMPT\] - Get a short, 1-2 sentence response.
+llm -m \[PROMPT\] - Get a medium, 3-5 sentence response.
+llm -l \[PROMPT\] - Get a long, 2-3 paragraph response.
+llm -t \[PROMPT\] - Enable model thinking.
+echo "CONTEXT" | llm \[PROMPT\] - Pipe context to the LLM.
 
 ## How it Works
 
