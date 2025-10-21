@@ -1,5 +1,5 @@
-# FlashLLM
-A lightweight python script to run LLM prompts quickly from a Unix shell.
+# PipeLLM
+A lightweight python script to allow the usage of LLMs from a unix shell, with compatiblity for data piping, sessions that last as long as the shell they are in, and exportable, customizable context windows. Current only compatible with Google Gemini. 
 
 ## Installation
 Download the script, move it to a directory in your `PATH` (such as `~/.local/bin/` or `/usr/local/bin/`), and rename it to `llm` for convenience. Make sure the script is executable (`chmod +x llm`).
