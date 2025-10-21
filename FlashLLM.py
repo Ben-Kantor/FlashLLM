@@ -3,7 +3,7 @@ import os, sys, json, asyncio, socket, signal, subprocess, argparse, atexit
 from dataclasses import dataclass
 import urllib.request, urllib.error
 
-INFO = "PipeLLM by Ben Kantor, Beta 2"
+INFO = "FlashLLM by Ben Kantor, Beta 2"
 DAEMON_ENV = "LLM_DAEMON"
 SOCKET_PREFIX = "\0llm-daemon-"
 GEMINI_API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent"
