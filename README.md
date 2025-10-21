@@ -1,4 +1,4 @@
-# PipeLLM
+# FlashLLM
 A lightweight python script to allow the usage of LLMs from a unix shell, with compatiblity for data piping, sessions that last as long as the shell they are in, and exportable, customizable context windows. Current only compatible with Google Gemini. 
 
 ## Installation
